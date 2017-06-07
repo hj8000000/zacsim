@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<div id="target">hello world</div>
+		<div>nice change</div>
+		<div>nice change</div>
+		<script>
+			document.getElementById('target').innerHTML = "world hello";
+
+			var divs = document.getElementByTagName('div');
+			for (var i = 0; i < divs.length; i++) {
+				divs[i].innerHTML = "change nice"
+			}
+		</script>
+	</body>
+</html>

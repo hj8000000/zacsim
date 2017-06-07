@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.js"></script>
+		<style>
+			.active {
+				color: black;
+				background-color: gold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="chloe">
+			Coding Everybody
+		</div>
+		<div id="target">
+			Hello World!
+		</div>
+		<script>
+			/*
+			document.getElementById('target').innerHTML = 'World Hello';
+			document.getElementById('chloe').innerHTML = 'World Hello';
+			document.getElementById('chloe').setAttribute('class','active');
+			*/
+			$('#target, #chloe').html('World Hello');
+			$('#target').addClass('active');
+			$('#chloe').css('border', '3px solid blue');
+		</script>
+	</body>
+</html>
